@@ -1,4 +1,4 @@
-// Smooth scroll for anchor links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -6,8 +6,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     section?.scrollIntoView({ behavior: 'smooth' });
   });
 });
-
-// Dark/Light mode toggle
 const toggleButton = document.createElement('button');
 toggleButton.textContent = '🌙 Toggle Theme';
 toggleButton.className = 'theme-toggle';
